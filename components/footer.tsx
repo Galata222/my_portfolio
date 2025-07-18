@@ -12,10 +12,10 @@ export function Footer() {
             </div>
           </div>
           <p className="text-foreground/60">
-            © 2024 Galata Waqwaya. All rights reserved.
+            © 2025 Galata Waqwaya. All rights reserved.
           </p>
           <p className="text-foreground/50 text-sm mt-2">
-            Built with Next.js, TypeScript, and Tailwind CSS
+            
           </p>
         </div>
       </div>
