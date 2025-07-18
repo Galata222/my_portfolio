@@ -2,7 +2,6 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
 import { Download, Calendar, MapPin, Award, GraduationCap, Briefcase } from 'lucide-react';
 
 export function CVSection() {
@@ -91,13 +90,6 @@ export function CVSection() {
     }
   ];
 
-  const downloadCV = () => {
-    // In a real application, this would download the actual CV file
-    console.log('Downloading CV...');
-    // You could implement actual file download here
-    alert('CV download functionality would be implemented here');
-  };
-
   return (
     <section id="cv" className="py-20 bg-muted/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -108,13 +100,16 @@ export function CVSection() {
           <p className="text-lg text-foreground/70 max-w-2xl mx-auto mb-8">
             A comprehensive overview of my professional experience, education, and achievements
           </p>
-          <Button
-            onClick={downloadCV}
-            className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-6 py-3 font-semibold transition-all duration-300 transform hover:scale-105"
+
+          {/* Download CV button using <a> tag */}
+          <a
+            href="/cv.pdf"
+            download
+            className="inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-6 py-3 font-semibold transition-all duration-300 transform hover:scale-105 rounded-md"
           >
             <Download className="h-4 w-4 mr-2" />
             Download CV
-          </Button>
+          </a>
         </div>
 
         <div className="space-y-12">
@@ -156,18 +151,16 @@ export function CVSection() {
                     <p className="text-foreground/70 leading-relaxed">
                       {job.description}
                     </p>
-                    
                     <div>
                       <h4 className="font-semibold text-foreground mb-2">Key Achievements:</h4>
                       <ul className="list-disc list-inside space-y-1 text-foreground/70">
-                        {job.achievements.map((achievement, achievementIndex) => (
-                          <li key={achievementIndex} className="text-sm">
+                        {job.achievements.map((achievement, i) => (
+                          <li key={i} className="text-sm">
                             {achievement}
                           </li>
                         ))}
                       </ul>
                     </div>
-                    
                     <div>
                       <h4 className="font-semibold text-foreground mb-2">Technologies Used:</h4>
                       <div className="flex flex-wrap gap-2">
@@ -228,12 +221,11 @@ export function CVSection() {
                         <span className="font-semibold">GPA:</span> {edu.gpa}
                       </p>
                     )}
-                    
                     <div>
                       <h4 className="font-semibold text-foreground mb-2">Achievements:</h4>
                       <ul className="list-disc list-inside space-y-1 text-foreground/70">
-                        {edu.achievements.map((achievement, achievementIndex) => (
-                          <li key={achievementIndex} className="text-sm">
+                        {edu.achievements.map((achievement, i) => (
+                          <li key={i} className="text-sm">
                             {achievement}
                           </li>
                         ))}
