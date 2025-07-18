@@ -22,7 +22,7 @@ export function ProjectsSection() {
       technologies: ['PHP', 'Bootstrap', 'Yii2', 'MySQL'],
       github: 'https://github.com/Galata222/clinic-managemnt-system',
       demo: 'https://taskapp-demo.galatawaqwaya.com',
-      image: 'clinic.png',
+      image: 'cms.png',
     },
 
     {
