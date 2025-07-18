@@ -8,36 +8,39 @@ import { ExternalLink, Github } from 'lucide-react';
 export function ProjectsSection() {
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'A full-featured e-commerce platform with user authentication, payment processing, and admin dashboard. Built with modern React patterns and scalable architecture.',
-      technologies: ['Next.js', 'TypeScript', 'Stripe', 'PostgreSQL', 'Tailwind CSS'],
-      github: 'https://github.com/galatawaqwaya/ecommerce-platform',
-      demo: 'https://ecommerce-demo.galatawaqwaya.com',
-      image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
+      title: 'GOSA (Social Support Association Platform)',
+      description: 'A Django–React–PostgreSQL application built for managing traditional social support associations in Ethiopia. Features include contribution tracking, event coordination, role-based access, and live deployment via Yegara Cloud at afoosha.com.',
+      technologies: ['Django','React.js', 'TypeScript', 'Stripe', 'PostgreSQL', 'Tailwind CSS'],
+      github: 'https://github.com/Galata222/ocia-project',
+      demo: 'https://afoosha.com/',
+      image: 'aosc.png',
     },
+
     {
-      title: 'Task Management App',
-      description: 'A collaborative task management application with real-time updates, team features, and advanced filtering. Perfect for agile teams and project management.',
-      technologies: ['React', 'Node.js', 'Socket.io', 'MongoDB', 'Express'],
-      github: 'https://github.com/galatawaqwaya/task-management',
+      title: 'Clinic Management System',
+      description: 'A system for digitizing clinical records, appointments, and medical reporting for small health centers. Built using Yii2 PHP Framework and Bootstrap.',
+      technologies: ['PHP', 'Bootstrap', 'Yii2', 'MySQL'],
+      github: 'https://github.com/Galata222/clinic-managemnt-system',
       demo: 'https://taskapp-demo.galatawaqwaya.com',
-      image: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'clinic.png',
     },
+
     {
-      title: 'Weather Analytics Dashboard',
-      description: 'A comprehensive weather analytics dashboard with interactive charts, forecasting, and location-based insights. Features beautiful data visualizations.',
-      technologies: ['React', 'D3.js', 'Weather API', 'Chart.js', 'SCSS'],
+      title: 'Volunteerism Management System',
+      description: 'A backend system developed for the Addis Ababa City Administration to manage and coordinate large-scale volunteer efforts.',
+      technologies: ['Laravel', 'Bootstrap', 'JavaScript', 'Chart.js', 'CSS'],
       github: 'https://github.com/galatawaqwaya/weather-dashboard',
-      demo: 'https://weather-demo.galatawaqwaya.com',
-      image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800',
+      demo: 'https://weather-demo.galatawaqwaya.httpscom',
+      image: 'vms.png',
     },
+
     {
-      title: 'Social Media Analytics',
-      description: 'An advanced social media analytics platform that tracks engagement, audience insights, and content performance across multiple platforms.',
-      technologies: ['Next.js', 'TypeScript', 'GraphQL', 'AWS', 'Tailwind CSS'],
-      github: 'https://github.com/galatawaqwaya/social-analytics',
+      title: 'Afan Oromo Spell Checker',
+      description: 'An NLP-based tool that detects and corrects spelling errors in Afan Oromo, one of Ethiopia’s major languages. It combines rule-based AI with dictionary lookup for accurate spell checking.',
+      technologies: ['Python', 'Flask', 'Hanspell', 'JavaScript', 'Tailwind CSS'],
+      github: 'https://github.com/Galata222/Afan-Oromo-Spell-Checker',
       demo: 'https://social-demo.galatawaqwaya.com',
-      image: 'https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'aosc.png',
     },
   ];
 

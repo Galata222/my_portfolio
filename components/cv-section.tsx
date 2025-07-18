@@ -8,90 +8,86 @@ import { Download, Calendar, MapPin, Award, GraduationCap, Briefcase } from 'luc
 export function CVSection() {
   const experience = [
     {
-      title: 'Senior Full Stack Developer',
-      company: 'TechCorp Solutions',
-      location: 'San Francisco, CA',
-      period: '2022 - Present',
-      description: 'Lead development of scalable web applications using React, Next.js, and Node.js. Mentored junior developers and implemented CI/CD pipelines.',
+      title: 'Assistant Lecturer in University',
+      company: 'Haramaya University',
+      location: 'Harar, Ethiopia',
+      period: '03/10/2024 - Present',
+      description: 'Delivering lectures and tutorials in assigned subjects, ensuring clear and effective instruction. Guiding students through academic projects, offering mentorship on research and development.',
       achievements: [
-        'Increased application performance by 40% through optimization',
-        'Led a team of 5 developers on major product releases',
-        'Implemented microservices architecture reducing deployment time by 60%'
+        'Teaching software engineering courses to university students',
+        'Mentoring students in their academic projects'
       ],
-      technologies: ['React', 'Next.js', 'Node.js', 'TypeScript', 'AWS', 'Docker']
+      technologies: ['Teaching', 'Mentorship', 'Research']
     },
     {
-      title: 'Full Stack Developer',
-      company: 'Digital Innovations Inc.',
-      location: 'Austin, TX',
-      period: '2020 - 2022',
-      description: 'Developed and maintained multiple client projects using modern web technologies. Collaborated with design teams to create pixel-perfect user interfaces.',
+      title: 'Software Developer Intern',
+      company: 'Faris Technologies',
+      location: 'Addis Ababa, Ethiopia',
+      period: '05/07/2022 - 10/10/2023',
+      description: 'Developed Volunteerism Management System for Addis Ababa Administration City as a backend developer. Worked closely with a cross-functional team to deliver the project on time and within budget.',
       achievements: [
-        'Built 15+ responsive web applications from scratch',
-        'Reduced bug reports by 35% through comprehensive testing',
-        'Improved code quality through peer reviews and best practices'
+        'Successfully delivered a city-wide volunteer management system',
+        'Collaborated effectively with designers and project managers'
       ],
-      technologies: ['React', 'Vue.js', 'Express', 'MongoDB', 'SCSS', 'Jest']
+      technologies: ['Django', 'PostgreSQL', 'Team Collaboration']
     },
     {
-      title: 'Frontend Developer',
-      company: 'StartupHub',
-      location: 'Remote',
-      period: '2019 - 2020',
-      description: 'Focused on creating engaging user experiences for startup clients. Worked closely with UX designers to implement responsive designs.',
+      title: 'Software Engineer Intern',
+      company: 'Hararghe Health Research',
+      location: 'Harar, Ethiopia',
+      period: '05/02/2023 - 27/06/2023',
+      description: 'Developed and deployed systems to streamline administrative processes in healthcare and correctional facilities.',
       achievements: [
-        'Delivered 20+ projects on time and within budget',
-        'Improved user engagement by 50% through UI/UX enhancements',
-        'Established frontend development standards and workflows'
+        'Created a Clinic Management System enhancing patient care',
+        'Developed a Prisoner Management System for efficient record tracking'
       ],
-      technologies: ['JavaScript', 'React', 'Tailwind CSS', 'Figma', 'Git']
+      technologies: ['System Design', 'Full-stack Development', 'Deployment']
     }
   ];
 
   const education = [
     {
-      degree: 'Bachelor of Science in Computer Science',
-      institution: 'University of Technology',
-      location: 'California, USA',
-      period: '2015 - 2019',
-      gpa: '3.8/4.0',
+      degree: 'BSc in Software Engineering',
+      institution: 'Haramaya University',
+      location: 'Haramaya, Ethiopia',
+      period: '06/10/2019 - 04/07/2024',
+      gpa: '4.0/4.0',
       achievements: [
-        'Magna Cum Laude graduate',
-        'President of Computer Science Club',
-        'Dean\'s List for 6 consecutive semesters'
+        'Gold Medalist for perfect 4.00 CGPA with all 35 A+ grades',
+        'Thesis: Afan Oromo Spell Checker using NLP',
+        'First place in Huawei ICT Competition 2022-2023 Cloud Track'
       ]
     },
     {
-      degree: 'Full Stack Web Development Bootcamp',
-      institution: 'CodeAcademy Pro',
-      location: 'Online',
-      period: '2018',
+      degree: 'High School',
+      institution: 'ODA Special Boarding School',
+      location: 'Adama, Ethiopia',
+      period: '09/09/2016 - 07/08/2019',
       achievements: [
-        'Top 5% of cohort',
-        'Built 10+ full-stack applications',
-        'Specialized in MERN stack development'
+        'Special boarding school education',
+        'Strong foundation for university studies'
       ]
     }
   ];
 
   const certifications = [
     {
-      name: 'AWS Certified Solutions Architect',
-      issuer: 'Amazon Web Services',
-      date: '2023',
-      credentialId: 'AWS-CSA-2023-001'
+      name: 'Huawei ICT Competition 2022-2023 National Final Cloud Track First Prize',
+      issuer: 'Huawei',
+      date: '29/08/2023',
+      credentialId: 'Regional Finalist'
     },
     {
-      name: 'Google Cloud Professional Developer',
-      issuer: 'Google Cloud',
-      date: '2022',
-      credentialId: 'GCP-PD-2022-045'
+      name: 'Artificial Intelligence Fundamentals',
+      issuer: 'Udacity (Ethiopian Ministry of Labor and Skill)',
+      date: '30/12/2024',
+      credentialId: 'Nanodegree Program'
     },
     {
-      name: 'MongoDB Certified Developer',
-      issuer: 'MongoDB University',
-      date: '2021',
-      credentialId: 'MDB-DEV-2021-123'
+      name: 'Certificate of Academic Achievement',
+      issuer: 'Haramaya University',
+      date: '04/07/2024',
+      credentialId: 'Gold Medalist'
     }
   ];
 
@@ -253,7 +249,7 @@ export function CVSection() {
           <div>
             <div className="flex items-center gap-3 mb-8">
               <Award className="h-6 w-6 text-purple-600" />
-              <h3 className="text-2xl font-bold text-foreground">Certifications</h3>
+              <h3 className="text-2xl font-bold text-foreground">Certifications & Awards</h3>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {certifications.map((cert, index) => (

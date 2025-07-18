@@ -11,24 +11,24 @@ export function PhotoSlideshow() {
 
   const photos = [
     {
-      src: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Developer working on laptop',
-      caption: 'Focused development work',
+      src: 'grad.png',
+      alt: 'Graduated in 2024',
+      caption: 'Graduated in 2024',
     },
     {
-      src: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Team collaboration meeting',
-      caption: 'Team collaboration',
+      src: 'gold.jpg',
+      alt: 'Honored with Gold Medal',
+      caption: 'Honored with Gold Medal',
     },
     {
-      src: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Code review session',
-      caption: 'Code review and planning',
+      src: 'gold_grad.jpg',
+      alt: 'Honored with Gold Medal',
+      caption: 'Honored with Gold Medal',
     },
     {
-      src: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Modern workspace setup',
-      caption: 'Modern development workspace',
+      src: 'competition.jpg',
+      alt: 'Won 1st Place in Huawei ICT Competition 2023',
+      caption: 'Won 1st Place in Huawei ICT Competition 2023',
     },
     {
       src: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',
